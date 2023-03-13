@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Import Font-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <title>Materialize CSS</title>
+    <style>
+        header {
+            background: url(img/black.png);
+            /* background-size: 500px; */
+            background-position: center;
+            min-height: 300px;
+        }
+
+        @media screen and (max-width :670px) {
+            header {
+                min-height: 500px;
+            }
+
+        }
+
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+
+        .tabs .indicator {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar-->
+    <header>
+        <nav class="nav-wrapper transparent" style="box-shadow: 1px 10px 10px black;">
+            <div class="container">
+                <a href="#" class="brand-logo">Progamer</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+
+                <ul class="right hide-on-med-and-down">
+                    <li> <a href="#product">Product</a></li>
+                    <li> <a href="#About">About</a></li>
+                    <li> <a href="#Contact">Contact</a></li>
+                    <li><a href="#" class="tooltiped btn-floating btn-small black darken-4"
+                            data-tooltip="This is Instagram"><i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li><a href="#" class="tooltiped btn-floating btn-small black darken-4"
+                            data-tooltip="This is Twitter"><i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li><a href="#" class="tooltiped btn-floating btn-small black darken-4"
+                            data-tooltip="This is Facebook"><i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="sidenav grey lighten-3" id="mobile-menu">
+                    <li> <a href="#">Product</a></li>
+                    <li> <a href="#">About</a></li>
+                    <li> <a href="#">Conatct</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+
+            <h1 class="center-align yellow-text" style="padding: 30px; font-family:  'arial';">Web Development</h1>
+
+        </div>
+    </header>
+
+    <!-- Photo/grid-->
+    <section class="container section" id="product">
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/1.png" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h2 class="blue-text text-darken-1"> Front End </h2>
+                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut harum in esse aliquam commodi cum, 
+                    doloribus ea nostrum placeat culpa praesentium provident suscipit, officiis ipsum ab cumque impedit 
+                    debitis fuga itaque optio eos? Cupiditate, obcaecati amet? Autem adipisci cumque iure et aspernatur, 
+                    veritatis delectus, recusandae minus aperiam corrupti atque deleniti itaque harum illo, molestias omnis 
+                    odit quisquam! In, ea minus. Voluptatem similique rerum quidem ea dolore! Quo in veritatis tempora adipisci
+                    architecto ratione non laborum quae, modi voluptate sunt saepe fugit similique repellat sed placeat eligendi.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4 offset-l1 push-l7">
+                <img src="img/6.png" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l5 right-align" 1>
+                <h2 class="red-text text-darken-1"> Back End</h2>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt sint iste, perferendis explicabo fuga 
+                    quo numquam eos dicta, autem quibusdam beatae assumenda dolorem voluptatum non perspiciatis excepturi enim blanditiis.
+                    Accusantium, ipsum exercitationem dolore eius nihil provident minima explicabo ex odit, consectetur laborum 
+                    reprehenderit sed quasi culpa itaque facere harum quos recusandae fugiat consequuntur minus ipsam totam. Aspernatur, 
+                    tenetur voluptatibus praesentium officiis modi hic commodi, ea adipisci eveniet voluptatum quia! Doloremque sint quas 
+                    maiores accusantium soluta autem velit culpa, dolorem veritatis! 
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Parallex-->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/slider/3.png" class="responsive-img">
+        </div>
+    </div>
+
+    <!-- Services / tabs-->
+    <section class="section container" id="About">
+        <div class="row">
+            <div class="col s12 l4">
+                <h2 class="light-green-text text-darken-4">What I do</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat deserunt repudiandae laudantium eligendi, 
+                    blanditiis doloremque? Libero itaque accusantium delectus, expedita labore assumenda ipsa quae error, 
+                    tenetur inventore, commodi praesentium rerum! Nam perferendis alias eveniet necessitatibus magni quibusdam at ex ipsam. </p>
+            </div>
+            <div class="col s12 l6 offset-l2">
+                <ul class="tabs">
+                    <li class="tab col s6">
+                        <a href="#articial" class="active light-blue-text text-darken-4">Articial</a>
+                    </li>
+                    <li class="tab col s6">
+                        <a href="#asli" class=" active light-blue-text text-darken-4">Jago Progamer</a>
+                    </li>
+                </ul>
+                <div id="articial" class="col s12">
+                    <p class="flow-text light-blue-text text-darken-4">Articial</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis adipisci, nihil ex exercitationem neque 
+                        aliquid velit quo debitis, in quos a quae reprehenderit officia expedita eum, libero quibusdam nam distinctio 
+                        et nisi explicabo! Reiciendis aperiam obcaecati expedita, aliquid cupiditate suscipit.</p>
+                </div>
+                <div id="asli" class="col s12">
+                    <p class="flow-text light-blue-text text-darken-4">Bunga Asli</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, facere odit fugiat sint, 
+                        eligendi nemo iusto modi a numquam enim vero aspernatur? Praesentium rem reprehenderit distinctio, 
+                        quod tenetur, iste quas maiores, necessitatibus voluptas consectetur rerum magni eum voluptates? 
+                        Eos tenetur accusamus vero repudiandae minima omnis unde nobis voluptates ea itaque. 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, commodi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallex-->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/slider/1.png" class="responsive-img">
+        </div>
+    </div>
+    <!-- form content-->
+    <section class="section container" id="Contact">
+        <div class="row">
+            <div class="col s12 l5">
+                <h5 class="light-blue-text text-darken-4"> Get in touch</h5>
+                <p> Silahkan Hubungi Kita melalui form disamping kanan berikut</p>
+            </div>
+            <div class="col s12 l5 offset-l2">
+                <form action="">
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email" id="email">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea class="materialize-textarea" id="message" cols="30" rows="10"></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="date" class="datepicker">
+                        <label for="date">Pilih Tanggal </label>
+                    </div>
+                    <div class="input-fie">
+                        <p>Service required</p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>Artificial</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>Jago</span>
+                            </label>
+                        </p>
+                    </div>
+                    <div class="input-field center">
+                        <button class="btn"> Submit</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- footer-->
+    <footer class="page-footer gray darken-3" style="background-color: rgb(27, 27, 68);">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>about me :</h5>
+                    <p>saya adalah manusia yang diberikan pikiran oleh tuhan untuk menjadi manusia yang bisa membedakan mana yang baik dan mana yang buruk</p>
+                    <p>saya adalah manusia yang diberikan pikiran oleh tuhan untuk menjadi manusia yang bisa membedakan mana yang baik dan mana yang buruk</p>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h5>Connect</h5>
+                    <li><a href="#" class="grey-text text-lighten-3">Facebook</a></li>
+                    <li><a href="#" class="grey-text text-lighten-3">Twitter</a></li>
+                    <li><a href="#" class="grey-text text-lighten-3">Linked In</a></li>
+                    <li><a href="#" class="grey-text text-lighten-3">Instagram</a></li>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+            <div class="container center-align">&copy; copyright 2023, dodi setyawan</div>
+        </div>
+    </footer>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.scrollspy').scrollSpy();
+            $('.datepicker').datepicker({
+                disableWeekends: true
+            });
+            $('.tooltiped').tooltip();
+        });
+    </script>
+</body>
+
+</html>
